@@ -9,13 +9,13 @@ header {
     font-weight: bold;
     display: flex;
     padding-left: 30px;
-    justify-content: space-around;
-    align-items: center;    
+    justify-content: space-between;  
     width: 100%;
     position: fixed;
     z-index: 2;
     flex-direction: row;
     background-color: white;
+    list-style: none;
 }
 .logo {
     color: mediumaquamarine;
@@ -27,12 +27,18 @@ header {
     margin-right: 12px;
 }
 nav {
+    display: flex;
+    justify-content: flex-end;
     padding-right: 40px;
+    align-items: center;
 }
 nav span {
-    display: inline-block;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
     padding: 20px 10px;
-
+    width:90%;
+    list-style: none;
 }
 a {
     color: black;
@@ -40,8 +46,11 @@ a {
 div p{
     margin: 0px 0px;
 }
+p {
+   display: block; 
+}
 .main {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     position: static;
     justify-content: center;
@@ -63,8 +72,7 @@ div p{
     display: block;
     width: 630px;
     flex-flow: column wrap;
-    margin: 40px 10px 40px 0px;
-    border: 4px solid black;   
+    margin: 40px 10px 40px 0px;  
 }
 .mother {
     height: 300px;
@@ -77,8 +85,7 @@ div p{
     font-weight: bold;
 }
 .orca {
-    border-top:4px solid black;
-    border-bottom:2px solid black;
+    display: inline-block;
 }
 .earth {
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
@@ -88,9 +95,11 @@ div p{
     font-weight: bold;
     font-size: 30px;
     color: white;
+    display: inline-flex;
 }
 .burgers {
-    border-top: 4px solid black;
+    display: flex;
+    flex-direction: column;
 }
 .research {
     border-top: 2px solid black;
@@ -102,6 +111,7 @@ div p{
     color: white;
     font-weight: bold;
     margin-top: 15px;
+    display: inline-flex;
 }
 .column.medium {
     border: 4px solid black;
